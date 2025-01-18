@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Plain Light';
+    color: white;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+/* 0B0B0B */
+
+#main{
+    position: relative;
+    background-color: #030303;
+
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        font-weight:500;
+        color: #fff;
+        opacity: 1;
+    }
+    47%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        font-weight:500;
+        color: #fff;
+        opacity: 0;
+
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 1;
+
+    }
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 0;
+
+    }
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 25vh 10vw;
+}
+
+.line h1{
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.line{
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+
+}
+
+#line1-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#line1-part1 h5,#line1-part1 h6{
+    font-size: 4vw;
+    font-weight: 100;
+    font-family: 'silk serif';
+
+
+}
+
+.line h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    /* animation-name: anime; */
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#line1-part1 h5{
+    width: 5vw;
+    text-align: right;
+}
