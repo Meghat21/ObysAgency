@@ -1,4 +1,5 @@
-
+function loadingAnimation(){
+    
 
 // var h5timer=document.querySelector("#line1-part1 h5");
 // var grow=0;
@@ -51,7 +52,28 @@ tl.from("#page1",{
     ease:Power4,
     duration:0.5
 })
-
-tl.to("#loader",{
-    display:none
+tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1",{
+    y:100,
+    stagger:0.2
 })
+
+// tl.to("#loader",{
+//     display:none
+// })
+}
+
+loadingAnimation();
+
+function cursorAnimation(){
+
+    document.addEventListener("mousemove",function(dets){
+        gsap.to("#crsr",{
+            left:dets.x,
+            top:dets.y
+        })
+    })
+
+    Shery.makeMagnet("#nav-part2 h4");
+}
+
+cursorAnimation();

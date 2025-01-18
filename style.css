@@ -113,3 +113,73 @@ body,html{
     width: 5vw;
     text-align: right;
 }
+
+/* page1 */
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    justify-content: center;
+}
+
+#nav-part2 h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background-color: #030303; */
+    width: 72%;
+    margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.hero h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    font-weight: 600;
+
+
+}
+
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    position: fixed;
+    border:2px solid rgb(166, 158, 158);
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+.hero h2,.hero h3{
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    font-weight: 600;
+
+
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
